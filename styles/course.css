@@ -1,0 +1,668 @@
+
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* Adjust the min and max values as needed */
+    gap: 16px;
+}
+
+.fightcard .imgcontainer {
+    cursor: pointer;
+    border-radius: 8px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.imgcover {
+    cursor: pointer;
+    padding-bottom: 100%;
+    position: relative;
+}
+.imgfightcover{
+    padding-bottom: 56.25%;
+}
+ .imgcover img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:contain
+}
+
+.fightcard .imgcontainer:hover {
+    border-radius: 0px;
+}
+ .imgcover:hover {
+    border-radius: 0px;
+}
+
+.fightcard .title:hover {
+    color: #c4ff43;
+}
+
+.fightcard {
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+    color: white !important;
+}
+
+.fightcard .title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-weight: 500;
+    line-height: 1.4rem;
+    height: 45px;
+}
+
+.productcard .title:hover {
+    color: #c4ff43;
+}
+
+.productcard .title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: white;
+    cursor: pointer;
+    text-decoration: none !important;
+    font-weight: 500;
+    line-height: 1.4rem;
+    height: 45px;
+}
+
+.main-container td {
+    border: 1px solid white;
+}
+
+.imgcontainer {
+    display: flex;
+    align-items: center;
+    /* background-color: white; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.imgcover {
+    overflow: hidden;
+    /* background-color: white; */
+}
+
+.productcard {
+    max-width: 400px;
+    margin: auto;
+    width: 100%;
+}
+
+.imgcover {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    justify-content: center;
+    background-color: white;
+}
+
+.imgprodcontainer {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+}
+
+@media (max-width:1600px) {
+  
+
+    .products {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Img container */
+@media (min-width:1601px) {
+    .imgcontainer {
+        width: 350px;
+        height: 196px;
+    }
+
+    .smallfightcard .imgcontainer {
+        width: 310px;
+        height: 174.3px;
+    }
+
+    /* For Products */
+    /* .imgprodcontainer{
+        width: 250px;
+        height: 250px;
+    } */
+}
+
+@media (min-width:1300px) and (max-width:1601px) {
+    .imgcontainer {
+        width: 400px;
+        height: 225px;
+    }
+
+    .smallfightcard .imgcontainer {
+        width: 269px;
+        height: 151.3px;
+    }
+
+    /* For Products */
+    /* .imgprodcontainer{
+        width: 250px;
+        height: 250px;
+    } */
+}
+
+@media (min-width:1200px) and (max-width:1300px) {
+    .imgcontainer {
+        width: 350px;
+        height: 196px;
+    }
+
+    .smallfightcard .imgcontainer {
+        width: 269px;
+        height: 151.3px;
+    }
+
+    /* .imgprodcontainer{
+        width: 250px;
+        height: 250px;
+    } */
+}
+
+@media (min-width:850px) and (max-width:993px) {
+    .imgcontainer {
+        width: 350px;
+        height: 196px;
+    }
+
+    .smallfightcard .imgcontainer {
+        width: 200px;
+        height: 112.3px;
+    }
+
+    /* .imgprodcontainer{
+        width: 350px;
+        height: 350px;
+    } */
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .imgcontainer {
+        width: 300px;
+        height: 169px;
+    }
+
+    /* .imgprodcontainer{
+        width: 300px;
+        height: 300px;
+    } */
+}
+
+@media (min-width:450px) and (max-width:550px) {
+    .imgcontainer {
+        width: 400px;
+        height: 225px;
+    }
+
+    .smallfightcard .imgcontainer {
+        width: 180px;
+        height: 101.3px;
+    }
+
+    /* .imgprodcontainer{
+        width: 400px;
+        height: 400px;
+    } */
+}
+
+@media (min-width:550px) and (max-width:700px) {
+    .imgcontainer {
+        width: 450px;
+        height: 253px;
+    }
+
+    .smallfightcard .imgcontainer {
+        width: 180px;
+        height: 101.3px;
+    }
+
+    /* .imgprodcontainer{
+        width: 450px;
+        height: 450px;
+    } */
+}
+
+@media (min-width:700px) and (max-width:850px) {
+    .imgcontainer {
+        width: 300px;
+        height: 169px;
+    }
+
+    .smallfightcard .imgcontainer {
+        width: 180px;
+        height: 101.3px;
+    }
+
+    /* .imgprodcontainer{
+        width: 300px;
+        height: 300px;
+    } */
+}
+
+@media (min-width:350px) and (max-width:450px) {
+    .imgcontainer {
+        width: 300px;
+        height: 169px;
+    }
+
+    .smallfightcard .imgcontainer {
+        width: 150px;
+        height: 84.37px;
+    }
+}
+
+@media (max-width:350px) {
+    .imgcontainer {
+        width: 250px;
+        height: 140.6px;
+    }
+
+    .smallfightcard .imgcontainer {
+        width: 150px;
+        height: 84.37px;
+    }
+}
+
+/*  */
+@media (max-width:992px) {
+
+    .products {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:700px) {
+  
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .fightcard img {
+        border-radius: 0;
+    }
+
+    .fightcard {
+        margin: auto;
+    }
+}
+
+@media (max-width:350px) {
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+
+.top-row-courses {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-row-courses .search-container {
+    margin-right: 0.75rem;
+}
+
+.top-row-courses h2 {
+    font-size: 1.8rem;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.search-input {
+    border: none;
+    padding: 9px 20px;
+    max-width: 600px;
+    border-radius: 20px 0 0 20px;
+    font-size: 15px;
+    color: black;
+    width: 50vw;
+    min-width: 280px;
+}
+
+.top-row-courses .search-input {
+    width: 24vw;
+}
+
+@media (max-width:800px) {
+    .top-row-courses {
+        flex-direction: column-reverse;
+    }
+
+    .categoriesFilter {
+        order: -1;
+        align-self: center !important;
+    }
+
+    .top-row-courses h2 {
+        font-size: 1.5rem;
+        margin-left: 13px;
+        align-self: flex-start;
+    }
+
+    .search-input {
+        width: 70vw !important;
+        min-width: 250px;
+        padding: 8.1px 20px;
+    }
+
+    .top-row-courses .search-container {
+        margin-right: 0
+    }
+}
+
+.search-btn {
+    background: #c4ff43;
+    /* You can replace this color with an image */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-btn img {
+    max-width: 100%;
+    height: auto;
+}
+
+.search-btn:hover {
+    background: #a27d00;
+    /* Adjust hover color as needed */
+}
+
+/* Fighters Filter */
+.fighterfilters {
+    gap: 14px;
+    display: flex;
+    padding: 8px;
+    /* Add padding to the container */
+    overflow-x: auto;
+}
+
+.fighterfilter {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 5px 14px;
+    color: black;
+    white-space: nowrap;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fighterfilter:hover {
+    background-color: rgba(211, 211, 211, 0.8);
+}
+
+.activefighterfilter {
+    background-color: #c4ff43;
+    color: white;
+}
+
+.activefighterfilter:hover {
+    background-color: #c4ff43;
+}
+
+
+.smallfightcard {
+    width: min-content;
+    height: max-content;
+    flex-shrink: 0;
+    margin: 2px;
+    box-sizing: border-box;
+}
+
+.smallfightcard .card-row {
+    display: none;
+}
+
+.smallfightcard .rating {
+    font-size: 13px;
+    justify-content: flex-end;
+}
+
+.smallproductcard {
+    /* width: 250px; */
+    flex-shrink: 0;
+    margin: 2px;
+    box-sizing: border-box;
+}
+
+.smallproductcard .card-row {
+    display: none;
+}
+
+.smallproductcard .rating {
+    font-size: 13px;
+    justify-content: flex-end;
+}
+
+/*  */
+.price {
+    margin-right: 12px;
+    /* max-width: 50px; */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+@media (max-width:600px) {
+    .price {
+        font-size: 12px;
+    }
+
+    .add-to-cart-btn {
+        font-size: 11px;
+    }
+
+    .rating {
+        font-size: 11px;
+    }
+}
+
+.course-description {
+    width: auto;
+    overflow: hidden;
+}
+
+
+.add-to-cart-btn {
+    background-color: #c4ff43;
+    color: black;
+    font-size: 11px;
+    border-radius: 0px;
+    /* white-space: nowrap; */
+    padding: 10px 16px !important;
+}
+
+.card-row {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.search-btn {
+    min-width: 44px;
+    min-height: 40.3px;
+}
+
+.card-column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.add-to-cart-btn {
+    margin: 0 10px;
+}
+
+@media (max-width:1300px) {
+    .price {
+        max-width: auto;
+    }
+
+    .add-to-cart-btn {
+        padding: 8px 10px !important;
+    }
+
+}
+
+@media (max-width:800px) {
+
+    .MuiRating-root {
+        font-size: 20px;
+    }
+
+    .rating {
+        font-size: 12px;
+    }
+}
+
+.status-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    color: red;
+}
+
+/* Reviews */
+
+.trainer-info {
+    display: flex;
+    align-items: center;
+    max-width: 650px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.rating {
+    display: flex;
+    color: #FDCC0D;
+    align-items: center;
+}
+
+.stars img {
+    width: 20px;
+    margin-bottom: 3px;
+}
+
+.MuiRating-icon {
+    color: #FDCC0D !important;
+}
+
+.trainer-info .profileimg {
+    width: 60px;
+    height: 60px;
+}
+
+@media (max-width:700px) {
+    .trainer-info .profileimg {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+
+@media (min-width:800px) {
+    .maintitle {
+        font-size: 32px;
+    }
+}
+
+.reviewuser {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ratingrow {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    flex-wrap: wrap;
+}
+
+/* Yt player css */
+/* .youtube-video-player {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+    height: 100%;
+    max-height: 70vh;
+  } */
+.youtube-video-player {
+    position: relative;
+    width: 100%;
+    padding-bottom: 45.25%;
+    height: 0;
+    min-height: 40vh;
+}
+
+.youtube-video-player iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-height: 75vh;
+    min-height: 40vh;
+}
+
+@media (min-width:1000px) {
+    .youtube-video-player {
+        padding-bottom: 40.25%;
+    }
+}
+
+.nameandfollowers .followers {
+    color: #bfbebe;
+}
+
+.nameandfollowers a {
+    text-decoration: none;
+}
+
+/* Scroll bar */
+
+.fighterfilters::-webkit-scrollbar {
+    height: 6px;
+}
+
+.fighterfilters::-webkit-scrollbar-thumb {
+    background-color: #c4ff43;
+    border-radius: 8px;
+}
+
+.fighterfilters::-webkit-scrollbar-track {
+    background-color: #1f1f1f;
+    /* Match the background color of your website */
+}

@@ -1,0 +1,35 @@
+.accpages .MuiDrawer-paper{
+    position: static !important;
+}
+.acc-content{
+    padding: 10px;
+    flex: 1;
+}
+.accpages{
+    display: flex;
+}
+
+.MuiTypography-body1{
+    font-weight: bold !important;
+}
+.tox-collection__item-label>*{
+    padding: 7px !important;
+}
+.form-control{
+    background-color: #232323 !important;
+    color: white !important;
+}
+.active .MuiListItem-root{
+    background-color: #bc940c;
+}
+.hover-color-primary:hover{
+    color: #e0b835;
+}
+
+.table-action{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}

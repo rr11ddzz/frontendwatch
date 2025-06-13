@@ -1,0 +1,156 @@
+.acc-content {
+    padding: 10px;
+    flex: 1;
+    width: 100%;
+}
+
+.accpages {
+    display: flex;
+    min-height: 80vh;
+}
+
+.MuiTypography-body1 {
+    font-weight: bold !important;
+}
+
+.tox-collection__item-label>* {
+    padding: 7px !important;
+}
+
+/* .form-control {
+    background-color: #232323 !important;
+    color: white !important;
+} */
+
+.active .MuiListItem-root {
+    background-color: #bc940c;
+}
+
+.hover-color-primary:hover {
+    color: #e0b835;
+}
+
+.table-action {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Payment methods */
+
+.payment-container {
+    min-height: 90vh;
+    padding: 20px;
+    width: 100%;
+}
+
+.payment-heading {
+    margin-bottom: 20px;
+}
+
+.payment-methods-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+@media (max-width:760px) {
+    .payment-methods-list{
+        justify-content: center;
+    }
+}
+
+.payment-method-item {
+    /* border: 1px solid #ccc; */
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: max-content;
+    gap: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    box-shadow: 0.4px 0.4px 8px rgba(255, 255, 255, 0.1), 1px 1px 8px rgba(255, 255, 255, 0.2);
+}
+
+.payment-method-item .card-btns{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+.default-text {
+    color: #007bff;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+}
+.default-btn{
+    background-color:#007bff ;
+    width: 150px;
+}
+
+.payment-method-item .brand {
+    width: 130px;
+}
+
+.add-payment-method {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.add-method-heading {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.card-element {
+    background: #f7f7f7 ;
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.add-card-btn {
+    margin-top: 10px;
+}
+
+.form-control {
+    color: black;
+    background-color: #f7f7f7;
+}
+.form-select{
+    color: black;
+    background-color: #f7f7f7;
+}
+/* Img css */
+
+/* .imgcontainer img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+} */
+
+
+.preview-thumbail-formgroup {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    justify-content: center;
+}
+.preview-thumbail-formgroup .thumbnail-input{
+    flex-grow: 1;
+    min-width: 200px;
+}
+@media (max-width:800px) {
+    .preview-thumbail-formgroup{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

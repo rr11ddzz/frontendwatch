@@ -1,0 +1,370 @@
+/* Add this CSS to your existing styles */
+.categoriesFilter {
+  display: flex;
+  align-self: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.categoriesFilter .main-filter-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.filterHead {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.categoriesFilter h4,
+.categoriesFilter h6 {
+  cursor: pointer;
+}
+
+.categoriesFilter h4:hover,
+.categoriesFilter h6:hover {
+  color: #c4ff43;
+}
+
+/* Custom styles for the dropdown */
+/*  */
+.filter-dropdown {
+  display: "inline-block";
+}
+
+.filter-dropdown-toggle {
+  color: #fff;
+  padding: 10px 6px;
+    border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.filter-dropdown-toggle:hover {
+  color: #c4ff43;
+  text-decoration: underline;
+}
+
+.filter-dropdown-toggle.active {
+  color: #c4ff43;
+  text-decoration: underline;
+}
+.filter-dropdown-menu {
+  color: #000000;
+  padding: 10px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  min-height: 40vh;
+  width: 100vw;
+  max-width: calc(100vw - (100vw - 100%));
+  /* Adjusted width considering scrollbar */
+}
+
+.category-dropdown:hover .filter-dropdown-menu {
+  display: block;
+}
+
+.filter-dropdown-itemcontainer {
+  display: flex;
+  width: fit-content;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.filter-dropdown-item {
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  min-width: 100px;
+  text-align: center;
+  font-size: small;
+}
+
+.manage-item-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.manage-item-images .imgcover {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  background-color: white;
+  padding-bottom: 100%;
+}
+
+.manage-item-images img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  object-fit: contain;
+  height: 100%;
+}
+
+/* Landing Page Design */
+.ProductImagesContainer {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+.image-gallery-content.image-gallery-thumbnails-left .image-gallery-slide .image-gallery-image {
+  max-height: 80vh !important;
+}
+
+.image-gallery-thumbnails {
+  height: 80vh !important;
+  overflow-y: auto !important;
+}
+
+.customExpandbtn {
+  position: absolute;
+  z-index: 4;
+  filter: drop-shadow(0 2px 2px #1a1a1a);
+  cursor: pointer;
+  padding: 20px;
+  right: 0;
+  bottom: 0;
+}
+
+.ProductMainDetailsContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.ProductMainDetails {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.variations .variationItems {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.variations .variationItems .variantfilterbtn {
+  font-size: 12px;
+  font-weight: 400;
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  border-radius: 6px;
+  padding: 0;
+  cursor: pointer;
+  min-width: 70px;
+  min-height: 80px;
+  max-width: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: none !important;
+}
+.variantfilterbtn hr{
+  width: 100%;
+}
+.variantfilterbtn .price{
+  font-size: small;
+  padding: 5px 10px;
+}
+.variantfilterbtn .notavailable{
+  font-size: xx-small;
+  cursor: pointer;
+  padding: 5px;
+}
+.variantfilterbtn .name{
+  font-size: 10px;
+  padding: 5px 10px;
+}
+.variations .variationItems .variantfilterbtn.active {
+  border: 1px solid #fad047 !important;
+}
+.variations .variationItems .variantfilterbtn.disabledvariation{
+  border: 1px dashed #646463;
+  color: #878787;
+}
+
+.variations .variationItems .variantfilterbtn:hover {
+  color: #d0d0d0;
+  border: 1px solid #d0d0d0;
+}
+
+/* .image-gallery-thumbnails-wrapper{
+  overflow-y: hidden; 
+} */
+/*  */
+@media (max-width:900px) {
+  .ProductMainDetailsContainer {
+    flex-direction: column;
+  }
+
+  .ProductImagesContainer,
+  .ProductMainDetails {
+    width: auto;
+  }
+
+  .ProductMainDetails {
+    align-items: center;
+  }
+
+  .image-gallery-thumbnails {
+    width: 95vw;
+    overflow-x: auto !important;
+    height: auto !important;
+  }
+}
+
+.ProductMainDetails .rating {
+  font-size: 11px;
+}
+
+.ProductMainDetails .rating>span {
+  font-size: 1.3rem;
+}
+
+/* Stock */
+.stockDetails{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.stockDetails .stockstatus{
+font-weight: 600;
+}
+.stockDetails .stockquantity{
+  font-size: small;
+}
+.stockDetails .stockstatus .outofStock{
+  color: rgb(218, 3, 3);
+}
+.stockDetails .stockstatus .inStock{
+  color: #01b901;
+}
+.AddTocartDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.AddTocartDetails .dropdown-menu{
+  overflow: auto;
+  max-height: 40vh;
+  min-width: 5rem;
+  font-size: 11px;
+}
+.AddTocartDetails .add-to-cart-btn{
+  margin: 0;
+  width: max-content;
+}
+.AddTocartDetails .dropdown-item{
+  cursor:pointer;
+}
+.btn-quantity{
+  /* box-shadow:0 1px 9px 0px rgba(223, 223, 223, 0.5); */
+  border-radius: 7px;
+    background: #dddddd;
+    color: black;
+    font-size: 11px;
+    padding: 0 6px 0 7px;
+    line-height: 20px;
+}
+.btn-quantity:hover{
+  background-color: #c1c1c1;
+}
+/* Scroll bar for  dropdown-menu */
+
+.AddTocartDetails .dropdown-menu::-webkit-scrollbar {
+  width: 6px;
+}
+
+.AddTocartDetails .dropdown-menu::-webkit-scrollbar-thumb {
+  background-color: #4d4d4d; 
+    border-radius: 8px;
+}
+
+.AddTocartDetails .dropdown-menu::-webkit-scrollbar-track {
+  background-color: #b6b6b6;
+}
+
+
+.productfeatures li{
+  margin-left: 30px;
+}
+
+.imgcontainerprod{
+  overflow: hidden;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 80px;
+  border-radius: 4px;
+}
+.imgcontainercourse{
+  height: 45px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 80px;
+  border-radius: 4px;
+}
+@media (max-width:700px) {
+  .querytitle{
+    font-size: large;
+  }
+  
+}
+
+/* Polcies */
+.policyDetails{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 12px;
+  border-top: 1px solid #ffffff29;
+  border-bottom: 1px solid #ffffff29;
+}
+.policyDetails .policyItem{
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+}
+.policyDetails .policyItem>b{
+  width: 20%;
+}
+.policyDetails .policyItem>div{
+  width: 80%;
+}
+
+/*  */
+.tab-link{
+  border: 1px solid #ffffff29 !important;
+  color: white;
+}
+.tab-link:hover{
+  color: #c4ff43;
+}
+.tab-row{
+  border-bottom: 1px solid #ffffff29 !important;
+}
+.custom-size-dropdown{
+  width: 100px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #dddddd;
+}

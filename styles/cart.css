@@ -1,0 +1,129 @@
+/* Cart */
+.cart-page .card-body {
+    color: black;
+}
+
+.cart-page .bg-cart {
+    background: #cecece;
+}
+
+.cart-page .main-container {
+    background-color: transparent;
+}
+
+/* CSS */
+.add-method-row {
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-method-row .form-group {
+    flex-basis: calc(50% - 7px);
+    box-sizing: border-box;
+}
+
+/* Adjust width to 100% on smaller screens */
+@media (max-width: 767px) {
+    .add-method-row .form-group {
+        flex-basis: 100%;
+    }
+}
+
+
+@media (max-width:1285px) and (min-width:987px) {
+    .add-method-row .form-group {
+        flex-basis: 100%;
+    }
+}
+
+.cart-page .payment-methods-list {
+    justify-content: center;
+}
+
+.cart-page .payment-method-item {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cart-page .payment-continer {
+    padding: 10px;
+}
+
+.cart-page .payment-container {
+    min-height: auto;
+}
+
+.cart-page .empty-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cart-page .add-payment-method {
+    border: 2px solid;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.cartprodtitle {
+    margin-left: 1rem;
+}
+
+
+.cartprodleftcont {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width:600px) {
+    .cartprodtitle {
+        margin-left: 0;
+    }
+
+    .cartprodleftcont {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
+
+/*  */
+.cartAddress {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    overflow: auto;
+    max-height: 15rem;
+    border: 1px #a7a7a7 solid;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+/* Scroll bar for  Address */
+
+.cartAddress::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cartAddress::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d;
+    border-radius: 8px;
+}
+
+.cartAddress::-webkit-scrollbar-track {
+    background-color: #b6b6b6;
+}
+.deliveryAddress textarea{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+}

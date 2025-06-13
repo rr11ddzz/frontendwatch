@@ -1,0 +1,48 @@
+.status {
+    color: #ffffff;
+    background-color: black;
+    border-radius: 15px;
+    border-radius: 999px;
+    text-align: center;
+    font-size: 11px;
+    padding: 2px 7px;
+    font-weight: 600;
+    max-width: 90px;
+}
+
+.succeeded {
+    background-color: rgb(2, 193, 2);
+}
+
+.complete {
+    background-color: rgb(2, 193, 2);
+}
+
+.status.delivered {
+    background-color: rgb(2, 193, 2);
+}
+
+.responsiveTable tbody tr {
+    padding: 10px;
+    border-color: white !important;
+}
+
+.responsiveTable td {
+    padding: 10px;
+}
+
+.responsiveTable th {
+    padding: 10px;
+}
+
+.status.processing {
+    background-color: #b4b4b4;
+    /* Orange for processing */
+    color: black;
+}
+
+.status.shipped {
+    background-color: #3188e5;
+    /* Orange for processing */
+    color: white;
+}

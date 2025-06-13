@@ -1,0 +1,215 @@
+.orderitemtd {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderitemtd a {
+  max-width: 230px;
+}
+
+.orderDetailContainer .StepperLabel {
+  color: #fff;
+  /* Set your desired color */
+  font-weight: 500;
+}
+
+.OrderDataDetailsCont {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.OrderDataDetails {
+  display: flex;
+  gap: 15px;
+  min-width: max-content;
+}
+
+.OrderTextDetails {
+  max-width: 250px;
+}
+
+.orderDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.orderDetailContainer h2 {
+  color: #818181;
+}
+
+.orderDetailContainer h3 {
+  color: #818181;
+}
+
+.tableHeadrow {
+  background: #b4b4b4;
+  font-size: small;
+  color: black;
+}
+
+/*  */
+.total-summary-container {
+  border: 1px #414141 solid;
+  border-radius: 4px;
+  width: fit-content;
+  padding: 20px;
+  flex: 1;
+  max-width: 100%;
+  background-color: black;
+}
+
+.total-summary-container h2 {
+  margin: 0 0 10px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.summary-total-line {
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.summary-payment-method {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.custom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.custom-row td {
+  border: none;
+}
+
+/* Custom Table */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: black;
+}
+
+/* Styling for table header */
+.custom-table thead th {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+/* Styling for table body */
+.custom-table tbody td {
+  padding: 10px 15px;
+
+}
+/* Specific styles for last-child and nested elements */
+.custom-table> :not(:last-child)> :last-child>* {
+  border-bottom-color: currentColor;
+}
+
+.custom-table> :not(caption)>*>* {
+  padding: 0.5rem;
+  border: 1px solid rgb(119, 119, 119);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1000px) {
+  .custom-table tbody td {
+    display: flex;
+    align-items: self-end;
+    flex-direction: column;
+  }
+
+
+  .custom-table,
+  .custom-table thead,
+  .custom-table tbody,
+  .custom-table th,
+  .custom-table td,
+  .custom-table tr {
+    display: block;
+  }
+
+  .custom-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .custom-table tr {
+    margin-bottom: 20px;
+    border: 1px solid #626262;
+    padding: 10px;
+  }
+
+  .custom-table td {
+    position: relative;
+    padding-left: 50%;
+    /* Adjust padding for mobile view */
+    text-align: right;
+  }
+
+  .custom-table td:before {
+    position: absolute;
+    top: 2px;
+    left: 6px;
+    max-width: 12rem;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    content: attr(data-label);
+  }
+  .custom-table> :not(caption)>*>* {
+    padding: 0.5rem;
+    border: none;
+  }
+}
+
+
+@media (max-width:600px) {
+  .custom-table .OrderDataDetails {
+    /* justify-content: flex-end; */
+    flex-direction: column;
+    align-items: end;
+  }
+  .custom-table td:before {
+    font-size:11px;
+    color: #e9ecef;
+  }
+  .custom-table tr {
+    padding: 0px;
+  }
+}
+/*  */
+@media (max-width:750px) {
+  .custom-row {
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .DetailRow {
+    flex-direction: column;
+  }
+
+  .DetailRow>div {
+    width: 100%;
+    max-width: 100%;
+  }
+}
