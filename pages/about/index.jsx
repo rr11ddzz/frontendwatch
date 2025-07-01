@@ -6,7 +6,7 @@ const About = () => {
             <h2 className='text-center my-5'>About Us</h2>
             <h4>Our Story</h4>
             <p>
-                "Timeless Archives" transforms the online sneaker retail space to enhance customer experience and streamline business operations. We are a centralized platform where sneaker enthusiasts, athletes, workers, or just a normal customer browsing for footwear can now  effortlessly explore and purchase authentic footwear all in one place.</p>
+                "Timeless Archives" transforms the online  watch space to enhance customer experience and streamline business operations. We are a centralized platform where watch enthusiasts or just a normal customer browsing for any type of watches can now  effortlessly explore and purchase authentic pieces all in one place.</p>
             <br /><br />
             <h4>Terms and conditions</h4>
             <p>By accessing and using this website, you agree to comply with and be bound by our terms and conditions, including the privacy policy and acceptable use guidelines.</p>

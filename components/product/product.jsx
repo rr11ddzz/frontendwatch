@@ -84,11 +84,11 @@ const Course = ({ id, deliveryCountry }) => {
                   
                 <select onChange={(e)=>setsize(e.target.value)} className="form-select form-select-sm custom-size-dropdown" aria-label=".form-select-sm example">
                   <option  disabled selected>Size</option>
-                  <option value="xsmall">X Small</option>
-                  <option value="small">Small</option>
-                  <option value="medium">Medium</option>
-                  <option value="large">Large</option>
-                  <option value="xlarge">X Large</option>
+                  <option value="xsmall">13-16cm</option>
+                  <option value="small">16-17cm</option>
+                  <option value="medium">17-19cm</option>
+                  <option value="large">19-21cm</option>
+                  <option value="xlarge">21+cm</option>
                 </select>
                 </div>
 
