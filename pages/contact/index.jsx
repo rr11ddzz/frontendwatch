@@ -54,7 +54,7 @@ const Contact = () => {
             <div className="contact-content">
                 <span>We would love to hear from you!</span>
                 <h1>Contact Us</h1>
-                <p>For all inquiries or issues, please fill out the form. Even if it is a silly question about shoe size. </p>
+                <p>For all inquiries or issues, please fill out the form. Even if it is a silly question about watch size. </p>
                 <br />
                 <p>We will respond within the hour directly to the contact number and email address you provided.</p>
             </div>
